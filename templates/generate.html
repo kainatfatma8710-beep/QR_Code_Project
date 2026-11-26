@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR | QRGEN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">QR<span>GEN</span></h2>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/generate">Generate QR</a>
+        <a href="/scan">Scan QR</a>
+        <a href="/about">About Us</a>
+    </div>
+</nav>
+
+<h1>Generate Your QR Code</h1>
+<p>Convert your text or website URL into a QR code instantly.</p>
+<section class="generate-intro">
+    <h2>Create QR Codes in Seconds</h2>
+
+    <p>
+        QRGEN allows you to convert your text and website URLs
+        into QR codes quickly and easily. QR codes provide a
+        convenient way to share information without typing
+        long messages or website addresses.
+    </p>
+
+    <p>
+        Simply enter your desired text or URL in the input box
+        below and click the Generate QR Code button. Your QR
+        code will be created and downloaded as a PNG image.
+    </p>
+</section>
+
+<form action="/generate" method="POST">
+    <input type="text" name="data"
+           placeholder="Enter text or website URL" required>
+    <button type="submit">Generate QR Code</button>
+</form>
+<section class="supported-section">
+    <h2>What Can You Convert into QR Codes?</h2>
+
+    <p>
+        QRGEN supports different types of information that
+        can be easily converted into QR codes.
+    </p>
+
+    <div class="supported-container">
+
+        <div class="supported-card">
+            <h3>Website URLs</h3>
+            <p>
+                Convert website links into QR codes and
+                allow others to access websites easily.
+            </p>
+        </div>
+
+        <div class="supported-card">
+            <h3>Text Messages</h3>
+            <p>
+                Store simple text messages and information
+                inside a scannable QR code.
+            </p>
+        </div>
+
+        <div class="supported-card">
+            <h3>Digital Sharing</h3>
+            <p>
+                Share useful information quickly by
+                downloading and sharing your QR image.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="benefits-section">
+    <h2>Benefits of Using QR Codes</h2>
+
+    <p>
+        QR codes make digital information sharing
+        more convenient and accessible.
+    </p>
+
+    <div class="benefits-container">
+
+        <div class="benefit-card">
+            <h3>Quick Information Access</h3>
+            <p>
+                Access stored information by simply
+                scanning a QR code with a smartphone.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Easy Sharing</h3>
+            <p>
+                Share website links and text without
+                manually typing long information.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Digital Convenience</h3>
+            <p>
+                Save and share QR code images digitally
+                whenever you need them.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+    <h2>QR<span>GEN</span></h2>
+
+    <p>
+        Make sharing information faster, easier, and smarter with QRGEN.
+        Generate QR codes from text and website URLs, or upload an existing
+        QR image to scan it instantly.
+    </p>
+
+    <h3>Quick Links</h3>
+
+    <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/generate">Generate QR</a>
+        <a href="/scan">Scan QR</a>
+        <a href="/about">About Us</a>
+    </div>
+
+    <div class="footer-bottom">
+        <span>Designed & Developed by Kainat Fatma</span>
+        <span>QRGEN</span>
+    </div>
+</footer>
+
+
+</body>
+</html>
